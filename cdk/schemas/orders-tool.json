@@ -1,0 +1,39 @@
+[
+    {
+        "name": "get_order_status",
+        "description": "Tool to get the latest status for an order",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "orderId": {
+                    "type": "string",
+                    "description": "Order Id"
+                }
+            },
+            "required": [
+                "orderId"
+            ]
+        }
+    },
+    {
+        "name": "update_order_status",
+        "description": "Tool to update the status of an order",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "orderId": {
+                    "type": "string",
+                    "description": "Order Id"
+                },
+                "newStatus": {
+                    "type": "string",
+                    "description": "New status: received, on-hold, shipped, cancelled"
+                }
+            },
+            "required": [
+                "orderId",
+                "newStatus"
+            ]
+        }
+    }
+]

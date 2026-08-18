@@ -1,0 +1,29 @@
+[project]
+name = "agentcore-observability-demo"
+version = "0.1.0"
+description = "AgentCore application to demonstrate observability"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT-0"
+dependencies = [
+    "aws-opentelemetry-distro>=0.18.0",
+    "bedrock-agentcore>=1.6.4",
+    "ddgs>=9.14.1",
+    "strands-agents>=1.48.0",
+    "strands-agents-tools>=0.5.1",
+]
+
+[dependency-groups]
+dev = [
+    "aws-cdk-aws-bedrock-agentcore-alpha>=2.260.0a0",
+    "aws-cdk-lib>=2.260.0,<3.0.0",
+    "aws-lambda-powertools>=3.31.1",
+    "constructs>=10.6.0,<11.0.0",
+    "pytest-mock>=3.15.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+    "app/fn_shared/python",
+]

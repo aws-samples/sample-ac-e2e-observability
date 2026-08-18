@@ -1,0 +1,6 @@
+ddgs
+strands-agents>=1.48.0
+strands-agents[otel]
+strands-agents-tools
+bedrock-agentcore
+aws-opentelemetry-distro>=0.18.0

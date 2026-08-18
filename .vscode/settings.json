@@ -1,0 +1,15 @@
+{
+    "pylint.args": [
+        "--init-hook=import sys; sys.path.extend(['${workspaceFolder}/cdk','${workspaceFolder}/app','${workspaceFolder}/app/mcp', '${workspaceFolder}/app/agent','${workspaceFolder}/app/fn_tool_orders','${workspaceFolder}/app/fn_shared/python','${workspaceFolder}/tests','${workspaceFolder}/demo'])"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/cdk",        
+        "${workspaceFolder}/app",
+        "${workspaceFolder}/app/mcp",
+        "${workspaceFolder}/app/agent",
+        "${workspaceFolder}/app/fn_tool_orders",
+        "${workspaceFolder}/app/fn_shared/python",
+        "${workspaceFolder}/tests",
+        "${workspaceFolder}/demo"
+    ]
+}
